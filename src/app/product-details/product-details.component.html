@@ -1,0 +1,41 @@
+<div class="row" style="margin-top: 50px;" style="background-color: #d3d3d3; height: 500px;">
+       
+    <div class="col-lg-4 text-center">
+            <img class="zoom" width="400px" height="400px" src="http://localhost:3006/{{products.productImagePath}}" alt="">
+        </div>
+
+
+    <div class="col-lg-8  bg-gray" >
+       <h1>
+          Name : {{products.name}}
+       </h1>
+       <hr>
+       <h3>
+         Category :    {{products.category.name}}
+       </h3>
+       <hr>
+       <span>
+         Price :  {{products.price}}Rs.
+       </span>
+       <hr>
+       <p>
+        Description :     {{products.description}}
+       </p>
+       <h4>
+           Select Qty:
+       </h4>
+       <span>
+           <select name="" id="" #ingre_qty>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+           </select>
+       </span>
+       <hr>
+       <button (click)="addTocart()" class="btn btn-warning text-light" style="width: 200px; height: 60px;"> 
+            Add to Cart  
+       </button>
+    </div>
+</div>

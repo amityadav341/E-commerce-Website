@@ -1,0 +1,42 @@
+
+<form #myform="ngForm" (submit)="loginClicked(myform)">
+
+        <div class="row">
+
+            <div class="col-lg-4"></div>
+            
+                <div class="col-lg-4 centerDiv" style="background-color: lightgray; margin-top: 100px;" >
+                    <h1 class="text-center" style="margin-top: 30px;">Login Page</h1>
+                    <div class="form-group text-center" style="margin-top: 50px;">
+                        <img src="assets/logo.jpeg" width="300px" height="100px">
+                    </div>
+                    <div class="form-group">
+                        <label for="">User Email</label>
+                        <input class="form-control" type="email" name="email" ngModel placeholder="Enter Your Email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">User Password</label>
+                        <input class="form-control" type="password" name="password" ngModel placeholder="Enter Your Password" id="password">
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary" style="width: 200px; height: 50px;margin-top: 40px;">
+                            Login
+                        </button>
+                        <br>
+                        <br>
+                        <p>
+                            OR
+                        </p>
+                        <a routerLink="/register" class="btn btn-warning" style="width: 200px; height: 50px;margin-bottom: 150px;">
+                            Register
+                        </a>
+
+                    </div>
+
+            
+        
+            </div>
+            <div class="col-lg-4"></div>
+
+        </div>
+</form>

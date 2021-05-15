@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+  <a class="navbar-brand" routerLink="/main">
+          <img width="100px"  src="assets/logo.jpeg" alt="">
+          Myshop
+  </a>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 800px;">
+    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" *ngIf="session_set" routerLink="/main"><b>Welcome,{{username}}</b></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/main"><b>Home</b> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/mycart"><b>My Cart</b> <span class="sr-only">(current)</span></a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <b>Category's</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/product-details" *ngFor="let cat of category">{{cat.name}}</a>
+        
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!session_set" routerLink="/login"><b>Login</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!session_set" routerLink="/register"><b>Registration</b></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" *ngIf="session_set" (click)="logout()"><b>Logout</b> </a>
+      </li>       
+    </ul>
+    
+  </div>
+</nav>

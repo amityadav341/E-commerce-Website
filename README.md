@@ -48,5 +48,17 @@ The `npm start` command builds (compiles TypeScript and copies assets) the appli
 Shut it down manually with `Ctrl-C`.
 
 <h1>#E-Commerce Website</h1>
-<img src="Readmeimages/home.JPG" width="800px" height="700px"/>
+<h3>Home Page View</h3>
+<img src="Readmeimages/home.JPG" width="80%" height="700px"/>
+<h3>Registration Page View</h3>
+<img src="Readmeimages/regi.JPG" width="80%" height="700px"/>
+<h3>login Page View</h3>
+<img src="Readmeimages/login.JPG" width="80%" height="700px"/>
+<h3>Product Page View</h3>
+<img src="Readmeimages/product.JPG" width="80%" height="700px"/>
+<h3>Single product Page View</h3>
+<img src="Readmeimages/pro1.JPG
+" width="80%" height="700px"/>
+<h3>My Cart Page View</h3>
+<img src="Readmeimages/home.JPG" width="80%" height="700px"/>
 
